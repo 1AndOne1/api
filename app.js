@@ -6,6 +6,7 @@ const main_page = require("./bb/main")
 const asta = require("./bb/asta")
 const noel = require("./bb/noel")
 const juno = require("./bb/juno")
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.urlencoded({extended:false}))
 app.get('/home', (req,res)=>{
     console.log(req.headers)
@@ -23,6 +24,6 @@ app.get('/home/juno', (req,res)=>{
     console.log(req.headers)
     res.send(juno)
 })
-app.listen(8005,()=>{
-    console.log("8005 port")
+app.listen(8001,()=>{
+    console.log("8001 port")
 })
