@@ -2,11 +2,14 @@ const express = require("express")
 const bodyParser = require("body-parser");
 const res = require("express/lib/response");
 const app = express();
-const main_page = require("./view/main")
-const asta = require("./view/asta")
-const noel = require("./view/noel")
-const juno = require("./view/juno")
+const main_page = require("./view/pages/main")
+const asta = require("./view/pages/asta")
+const noel = require("./view/pages/noel")
+const juno = require("./view/pages/juno")
 app.use(bodyParser.urlencoded({extended:false}))
+
+
+app.use(express.static(__dirname + '/public'));
 app.get('/home', (req,res)=>{
     console.log(req.headers)
     res.send(main_page)
