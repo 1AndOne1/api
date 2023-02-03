@@ -2,11 +2,10 @@ const express = require("express")
 const bodyParser = require("body-parser");
 const res = require("express/lib/response");
 const app = express();
-const main_page = require("./bb/main")
-const asta = require("./bb/asta")
-const noel = require("./bb/noel")
-const juno = require("./bb/juno")
-app.use(express.static(__dirname + '/public'))
+const main_page = require("./view/main")
+const asta = require("./view/asta")
+const noel = require("./view/noel")
+const juno = require("./view/juno")
 app.use(bodyParser.urlencoded({extended:false}))
 app.get('/home', (req,res)=>{
     console.log(req.headers)
@@ -24,6 +23,6 @@ app.get('/home/juno', (req,res)=>{
     console.log(req.headers)
     res.send(juno)
 })
-app.listen(8001,()=>{
-    console.log("8001 port")
+app.listen(8006,()=>{
+    console.log("8006 port")
 })
