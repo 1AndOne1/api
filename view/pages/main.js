@@ -9,14 +9,22 @@ const main_page = `
     <title>Black clover</title>
 </head>
 <body>
-    <h1>Characters</h1>
+    <div class = container>
+    <div class = home>
+    <h1>Главная страница</h1>
+    </div>
+    <div class = head>
+    <h2>Characters</h2>
+    </div>
+    <div class = pers>
     <ul>
-        <li>Asta</li>
-        <li>Noel Silver</li>
-        <li>Juno</li>
+        <li><a href ='../home/asta'>Asta</a></li>
+        <li><a href ='../home/noel'>Noel Silver</a></li>
+        <li><a href ='../home/juno'>Juno</a></li>
     </ul>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/hxTn9FsFn4o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
+</div>
 `
 module.exports = main_page;

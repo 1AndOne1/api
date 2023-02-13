@@ -2,4 +2,47 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: red;
+    padding: 250px;
+}
+
+li {
+    color: white;
+    margin-inline: 70px;
+    list-style: none;
+    color: rgb(34, 216, 216);
+    background: #0B2349;
+    box-shadow: 1px -10px 5px -10px #0D61BC inset;
+    border-radius: 5px;
+    animation: text 2s infinite alternate-reverse;
+    background: #FFFFFF;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
