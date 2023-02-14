@@ -12,37 +12,41 @@ h1 {
     color: white;
 }
 h2 {
+    font-size: 30px;
     color: red;
-    padding: 250px;
 }
 
 li {
     color: white;
-    margin-inline: 70px;
     list-style: none;
-    color: rgb(34, 216, 216);
-    background: #0B2349;
-    box-shadow: 1px -10px 5px -10px #0D61BC inset;
-    border-radius: 5px;
-    animation: text 2s infinite alternate-reverse;
-    background: #FFFFFF;
-
+    font-size: 30px;
 }
-
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 150px;
+}
+.head {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pers {
+    padding: 40px;
+}
 ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-inline: 600px;
 }
-
-.head {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.container {
+.know-more {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    padding: 200px;
+    font-size: 25px;
 }

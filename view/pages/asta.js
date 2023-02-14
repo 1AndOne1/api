@@ -1,19 +1,23 @@
+const head = require ("../components/head")
+const footer = require ("../components/footer")
+
 const asta = `
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Black clover</title>
-</head>
+<link href="/main-css.css" rel="stylesheet">
+<div class = 'head'>
+${head}
+</div>
 <body>
     <h1>Asta</h1>
+    <div class = 'about-asta'>
     <ul>
         <li>Age = 18</li>
         <li>Magic skills = false</li>
         <li>Sword skills = true</li>
     </ul>
+    </div>
+    <div class = 'footer'>
+    ${footer}
+    </div>
 </body>
 </html>
 `
